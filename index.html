@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Billy Crystal Collector</title>
+        <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="./assets/javascript/game.js"></script>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-dark bg-dark">
+            <span class="navbar-brand mb-0 h1">Billy Crystal Collector</span>
+        </nav>
+
+        <div class="container">
+            <!--This row holds the instructions-->
+            <div class="row">
+                <div class="col-lg-12 card">
+                    <p>You will be given a random number at the start of the game.</p>
+                    <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+                    <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+                    <p>The value of each crystal is hidden from you until you click on it.</p>
+                    <p>Each time when the game starts, the game will change the values of each crystal</p>
+                </div>
+            </div>
+
+            <!--This row holds the values and score counters-->
+            <div class="row">
+                <div class="col-lg-2 card">
+                    <h1 id="number-to-guess"></h1>
+                </div>
+                <div class="col-lg-4 card">
+                    <h1 id="current-total-text">Counter: 0</h1>
+                </div>
+                <div class="col-lg-3 card">
+                    <h1 id="wins-text">Wins: 0</h1>
+                </div>
+                <div class="col-lg-3 card">
+                    <h1 id="loses-text">Loses: 0</h1>
+                </div>
+
+            </div>
+
+            <!--This row displays the crystals-->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="crystals"></div>
+                </div>
+            </div>
+
+            <!--This says if you win or lose-->
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 id="game-message"></h1>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
